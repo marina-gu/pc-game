@@ -8,5 +8,15 @@
 ### This game was created using JavaScript
 
 ```JavaScript
-
+function play() {
+    const userNumber = document.querySelector("#guess").value;
+    input.value = ' ';
+  
+    if (userNumber < 1 || userNumber > 20) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops!',
+            text: 'Enter a number from 1 to 20!',
+        })
+    }
 ```
